@@ -1,0 +1,138 @@
+{
+  "name": "Business Value (BV)",
+  "framework": "WSJF",
+  "scale": {
+    "min": 1,
+    "max": 10
+  },
+  "definition": {
+    "summary": "Business Value measures the magnitude of positive business outcome delivered if this work is completed successfully.",
+    "details": [
+      "Represents incremental impact to the business within a 12–24 month horizon",
+      "Assumes successful delivery"
+    ],
+    "characteristics": [
+      "Independent of effort, urgency, and risk",
+      "Comparable across all competing work",
+      "Grounded in measurable or observable outcomes where possible"
+    ]
+  },
+  "scoringPrinciples": [
+    "Score incremental value, not total product value",
+    "Use relative comparison across the portfolio",
+    "Do not discount for delivery risk (handled elsewhere)",
+    "Anything above a score of 5 requires justification",
+    "Scores of 9–10 should be rare"
+  ],
+  "scaleDefinitions": [
+    {
+      "score": 1,
+      "label": "Negligible",
+      "description": "No material customer, revenue, or strategic impact. Would not be noticed if delayed or removed.",
+      "examples": [
+        "Cosmetic UI changes",
+        "Low-value internal convenience",
+        "Optional polish with no KPI impact"
+      ]
+    },
+    {
+      "score": 2,
+      "label": "Very Low",
+      "description": "Marginal improvement with very limited reach. No measurable business KPI impact.",
+      "examples": [
+        "Edge-case usability improvement",
+        "Feature for a very small user group",
+        "Minimal operational improvement"
+      ]
+    },
+    {
+      "score": 3,
+      "label": "Low",
+      "description": "Small, measurable improvement with limited scope. Impact is real but minor.",
+      "examples": [
+        "Improvement affecting less than 5% of users",
+        "Minor cost avoidance",
+        "Small performance or quality improvement"
+      ]
+    },
+    {
+      "score": 4,
+      "label": "Moderate-Low",
+      "description": "Tangible but localized impact. Supports business goals in a limited way.",
+      "examples": [
+        "Feature for a secondary persona",
+        "Localized process improvement",
+        "Small upsell or efficiency gain"
+      ]
+    },
+    {
+      "score": 5,
+      "label": "Moderate",
+      "description": "Clear, measurable business value. Benefits a meaningful segment and supports at least one business objective.",
+      "examples": [
+        "Measurable KPI lift (small but noticeable)",
+        "Retention improvement in a defined segment",
+        "Cost reduction at team or product level"
+      ],
+      "notes": [
+        "Baseline meaningful value score"
+      ]
+    },
+    {
+      "score": 6,
+      "label": "Moderate-High",
+      "description": "Strong business impact across multiple teams or customer segments. Would be noticed if delayed.",
+      "examples": [
+        "Core workflow or funnel improvement",
+        "Material operational efficiency gains",
+        "Competitive parity in an important area"
+      ]
+    },
+    {
+      "score": 7,
+      "label": "High",
+      "description": "Significant contribution to company objectives. Affects a large portion of customers, revenue, or cost structure.",
+      "examples": [
+        "Major monetization improvement",
+        "Key customer retention driver",
+        "Broad efficiency gains across a function"
+      ]
+    },
+    {
+      "score": 8,
+      "label": "Very High",
+      "description": "Major driver of business performance. Directly tied to annual goals or strategic initiatives.",
+      "examples": [
+        "Significant revenue impact",
+        "Market expansion capability",
+        "Large-scale customer satisfaction improvement"
+      ]
+    },
+    {
+      "score": 9,
+      "label": "Critical",
+      "description": "Among the most valuable initiatives in the portfolio. Failure to deliver would materially harm the business.",
+      "examples": [
+        "Core platform capability for growth",
+        "High-stakes customer or partner commitments",
+        "Company-level KPI impact"
+      ]
+    },
+    {
+      "score": 10,
+      "label": "Existential / Transformational",
+      "description": "Business survival or transformation level impact. Enables or protects a fundamental business capability with no viable alternative.",
+      "examples": [
+        "Required to continue operating",
+        "Enables a new core business model",
+        "Prevents catastrophic revenue or customer loss"
+      ]
+    }
+  ],
+  "governanceGuidance": [
+    "Require written justification for Business Value scores of 7 or higher",
+    "Calibrate scores across products and portfolios",
+    "Review score distribution to prevent inflation",
+    "Use Business Value scores as an input to decision-making, not the decision itself"
+  ]
+}

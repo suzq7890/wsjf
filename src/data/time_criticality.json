@@ -1,0 +1,135 @@
+{
+  "name": "Time Criticality (TC)",
+  "framework": "WSJF",
+  "scale": {
+    "min": 1,
+    "max": 10
+  },
+  "definition": {
+    "summary": "Time Criticality measures how the value of the work decays over time and the cost of delaying delivery.",
+    "details": [
+      "Represents urgency based on deadlines, market windows, or escalating costs of delay",
+      "Assumes the business value is otherwise unchanged"
+    ],
+    "characteristics": [
+      "Independent of effort and job size",
+      "Distinct from overall business value magnitude",
+      "Driven by external or internal timing constraints"
+    ]
+  },
+  "scoringPrinciples": [
+    "Score based on how quickly value decays if delayed",
+    "Do not inflate scores due to personal preference or convenience",
+    "Deadlines should be explicit when possible",
+    "Anything above a score of 6 requires a clear timing rationale",
+    "Scores of 9–10 should be rare and well-justified"
+  ],
+  "scaleDefinitions": [
+    {
+      "score": 1,
+      "label": "No Urgency",
+      "description": "No meaningful cost of delay. Timing does not impact value.",
+      "examples": [
+        "Evergreen improvement",
+        "Optional enhancement",
+        "Work that can be done at any time with no downside"
+      ]
+    },
+    {
+      "score": 2,
+      "label": "Very Low Urgency",
+      "description": "Minimal cost of delay. Long deferral would have little to no business impact.",
+      "examples": [
+        "Non-time-bound optimization",
+        "Backlog cleanup",
+        "Low-priority internal improvement"
+      ]
+    },
+    {
+      "score": 3,
+      "label": "Low Urgency",
+      "description": "Some cost of delay over a long period, but no clear deadline or window.",
+      "examples": [
+        "Incremental improvement with slow value decay",
+        "Deferred efficiency work",
+        "Nice-to-have capability"
+      ]
+    },
+    {
+      "score": 4,
+      "label": "Moderate-Low Urgency",
+      "description": "Value degrades slowly if delayed. Better sooner, but not time-sensitive.",
+      "examples": [
+        "Improvements supporting future growth",
+        "Non-critical enablement work",
+        "Work aligned to long-term strategy"
+      ]
+    },
+    {
+      "score": 5,
+      "label": "Moderate Urgency",
+      "description": "Noticeable cost of delay over time. Delaying too long creates lost opportunity.",
+      "examples": [
+        "Seasonally relevant but flexible delivery",
+        "Moderate dependency for upcoming work",
+        "Competitive improvement with no hard deadline"
+      ]
+    },
+    {
+      "score": 6,
+      "label": "Moderate-High Urgency",
+      "description": "Clear and increasing cost of delay. Timing materially affects outcomes.",
+      "examples": [
+        "Upcoming dependency for another initiative",
+        "Market opportunity with soft timing constraints",
+        "Operational pain increasing over time"
+      ]
+    },
+    {
+      "score": 7,
+      "label": "High Urgency",
+      "description": "Strong time sensitivity. Delays will result in significant value loss.",
+      "examples": [
+        "Customer commitments with delivery expectations",
+        "Time-bound commercial opportunities",
+        "Growing regulatory or contractual pressure"
+      ]
+    },
+    {
+      "score": 8,
+      "label": "Very High Urgency",
+      "description": "Critical timing window. Missing the window causes substantial loss of value.",
+      "examples": [
+        "Regulatory deadlines",
+        "Market launch windows",
+        "Escalating customer or financial impact"
+      ]
+    },
+    {
+      "score": 9,
+      "label": "Immediate Urgency",
+      "description": "Severe and imminent cost of delay. Each increment of time materially worsens outcomes.",
+      "examples": [
+        "Impending compliance failure",
+        "Major customer at risk",
+        "Rapidly escalating operational issue"
+      ]
+    },
+    {
+      "score": 10,
+      "label": "Emergency / Drop Everything",
+      "description": "Extreme urgency. Delay causes immediate and unacceptable business harm.",
+      "examples": [
+        "Legal or regulatory violation",
+        "Production outage or data loss risk",
+        "Business continuity threat"
+      ]
+    }
+  ],
+  "governanceGuidance": [
+    "Require explicit timing rationale for Time Criticality scores of 7 or higher",
+    "Re-score Time Criticality when deadlines or conditions change",
+    "Audit for chronic overuse of high urgency scores",
+    "Treat Time Criticality as a decay function, not a proxy for importance"
+  ]
+}
