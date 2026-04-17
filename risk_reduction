@@ -1,0 +1,135 @@
+{
+  "name": "Risk Reduction / Opportunity Enablement (RR/OE)",
+  "framework": "WSJF",
+  "scale": {
+    "min": 1,
+    "max": 10
+  },
+  "definition": {
+    "summary": "Risk Reduction / Opportunity Enablement measures the degree to which the work reduces future business or technical risk, or unlocks new opportunities for future value delivery.",
+    "details": [
+      "Captures risk retired or future options enabled by completing this work",
+      "Often applies to enablers, architectural work, and foundational investments"
+    ],
+    "characteristics": [
+      "Independent of immediate business value and urgency",
+      "Focused on future optionality and downside avoidance",
+      "May not produce direct customer-facing value on its own"
+    ]
+  },
+  "scoringPrinciples": [
+    "Score based on the magnitude of risk reduced or opportunity enabled",
+    "Do not score higher simply because work is technical or foundational",
+    "Future value must be realistic and clearly articulated",
+    "Anything above a score of 6 requires explicit justification",
+    "Scores of 9–10 should be rare and exceptional"
+  ],
+  "scaleDefinitions": [
+    {
+      "score": 1,
+      "label": "No Risk Reduction or Enablement",
+      "description": "Does not meaningfully reduce risk or enable future work. Primarily isolated or cosmetic.",
+      "examples": [
+        "Refactoring with no reliability impact",
+        "Optional cleanup with no dependencies",
+        "Work that does not unlock additional capabilities"
+      ]
+    },
+    {
+      "score": 2,
+      "label": "Minimal Risk Reduction",
+      "description": "Very small reduction in risk or minor enablement with limited future applicability.",
+      "examples": [
+        "Minor code cleanup",
+        "Low-impact technical maintenance",
+        "Small improvement with narrow scope"
+      ]
+    },
+    {
+      "score": 3,
+      "label": "Low Risk Reduction",
+      "description": "Reduces localized or low-impact risk. Enablement is limited and non-critical.",
+      "examples": [
+        "Reducing minor technical debt",
+        "Isolated upgrade with limited dependencies",
+        "Improving non-critical tooling"
+      ]
+    },
+    {
+      "score": 4,
+      "label": "Moderate-Low Risk Reduction",
+      "description": "Reduces known risk in a constrained area or enables limited future work.",
+      "examples": [
+        "Stabilizing a secondary service",
+        "Reducing maintenance burden for a single team",
+        "Small architectural improvement"
+      ]
+    },
+    {
+      "score": 5,
+      "label": "Moderate Risk Reduction",
+      "description": "Clearly reduces meaningful risk or enables future work for multiple initiatives.",
+      "examples": [
+        "Reducing recurring operational incidents",
+        "Simplifying a shared dependency",
+        "Enabler supporting several planned features"
+      ]
+    },
+    {
+      "score": 6,
+      "label": "Moderate-High Risk Reduction",
+      "description": "Substantially lowers risk or unlocks important future capabilities across teams.",
+      "examples": [
+        "Removing a known scalability constraint",
+        "Modernizing a core shared component",
+        "Enabler that several teams depend on"
+      ]
+    },
+    {
+      "score": 7,
+      "label": "High Risk Reduction",
+      "description": "Significantly reduces major business or technical risk, or enables critical future initiatives.",
+      "examples": [
+        "Mitigating a major reliability or security risk",
+        "Foundational platform upgrade",
+        "Unblocking a strategic initiative"
+      ]
+    },
+    {
+      "score": 8,
+      "label": "Very High Risk Reduction",
+      "description": "Eliminates a high-impact risk or enables a major set of future business opportunities.",
+      "examples": [
+        "Addressing a serious security exposure",
+        "Unlocking large-scale product expansion",
+        "Preventing systemic failure modes"
+      ]
+    },
+    {
+      "score": 9,
+      "label": "Critical Risk Reduction",
+      "description": "Removes severe, broadly impactful risk or enables company-level strategic capabilities.",
+      "examples": [
+        "Preventing major regulatory or compliance failure",
+        "Eliminating a single point of catastrophic failure",
+        "Enabling multiple strategic programs"
+      ]
+    },
+    {
+      "score": 10,
+      "label": "Existential Risk Mitigation / Transformational Enablement",
+      "description": "Prevents catastrophic failure or enables transformation of core business capabilities.",
+      "examples": [
+        "Preventing systemic outage or data loss",
+        "Compliance work required to operate",
+        "Foundational architecture required for the business to scale or survive"
+      ]
+    }
+  ],
+  "governanceGuidance": [
+    "Require explicit articulation of the risk reduced or opportunity enabled for RR/OE scores of 7 or higher",
+    "Tie enablement claims to concrete future initiatives where possible",
+    "Audit for misuse of RR/OE as a proxy for technical preference",
+    "Re-evaluate Risk Reduction scores as risks are retired or plans change"
+  ]
+}
