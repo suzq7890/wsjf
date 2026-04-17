@@ -1,0 +1,136 @@
+{
+  "name": "Job Size",
+  "framework": "WSJF",
+  "scale": {
+    "min": 1,
+    "max": 10
+  },
+  "definition": {
+    "summary": "Job Size measures the relative amount of effort required to complete the work item, assuming normal conditions and uninterrupted focus.",
+    "details": [
+      "Represents total delivery effort, not elapsed calendar time",
+      "Includes design, build, test, deployment, and coordination effort",
+      "Assumes a reasonably skilled, stable team"
+    ],
+    "characteristics": [
+      "Independent of business value and urgency",
+      "Estimated relatively, not absolutely",
+      "Intentionally coarse-grained to avoid false precision"
+    ]
+  },
+  "scoringPrinciples": [
+    "Estimate relative effort, not exact time or cost",
+    "Include all work required to deliver the outcome",
+    "Do not inflate size due to uncertainty (risk is handled elsewhere)",
+    "Use the same reference items to calibrate across teams",
+    "Re-estimate only if scope materially changes"
+  ],
+  "scaleDefinitions": [
+    {
+      "score": 1,
+      "label": "Tiny",
+      "description": "Trivial amount of effort. Can be completed quickly with minimal coordination.",
+      "examples": [
+        "Simple configuration change",
+        "Very small, well-understood enhancement",
+        "Minor change requiring little testing"
+      ]
+    },
+    {
+      "score": 2,
+      "label": "Very Small",
+      "description": "Small, contained effort with little complexity and limited dependencies.",
+      "examples": [
+        "Straightforward enhancement",
+        "Isolated bug fix",
+        "Single-team change with minimal testing"
+      ]
+    },
+    {
+      "score": 3,
+      "label": "Small",
+      "description": "Modest effort requiring some design, development, and testing.",
+      "examples": [
+        "New capability added to an existing flow",
+        "Minor integration work",
+        "Well-defined story spanning a few tasks"
+      ]
+    },
+    {
+      "score": 4,
+      "label": "Moderate-Small",
+      "description": "Clearly bounded effort with moderate complexity or coordination needs.",
+      "examples": [
+        "Feature requiring cross-functional input",
+        "Changes touching multiple components",
+        "Moderate test and validation effort"
+      ]
+    },
+    {
+      "score": 5,
+      "label": "Moderate",
+      "description": "Meaningful amount of work requiring sustained effort and coordination.",
+      "examples": [
+        "Fully scoped feature",
+        "Noticeable architecture or design work",
+        "Multiple dependent tasks across a team"
+      ]
+    },
+    {
+      "score": 6,
+      "label": "Moderate-Large",
+      "description": "Large effort with increased complexity, dependencies, or uncertainty.",
+      "examples": [
+        "Feature spanning multiple teams",
+        "Significant integration effort",
+        "Substantial testing and rollout planning"
+      ]
+    },
+    {
+      "score": 7,
+      "label": "Large",
+      "description": "Substantial body of work requiring extensive coordination and delivery effort.",
+      "examples": [
+        "Major feature or capability",
+        "Cross-team or cross-system initiative",
+        "Lengthy build and stabilization period"
+      ]
+    },
+    {
+      "score": 8,
+      "label": "Very Large",
+      "description": "Very high effort item that approaches the upper bounds of what should be treated as a single job.",
+      "examples": [
+        "Large, multi-team initiative",
+        "Significant platform enhancement",
+        "Complex delivery with many dependencies"
+      ]
+    },
+    {
+      "score": 9,
+      "label": "Extremely Large",
+      "description": "Massive effort combining multiple large bodies of work. Likely needs further decomposition.",
+      "examples": [
+        "Program-sized initiative",
+        "Major system migration",
+        "Large-scale architectural rework"
+      ]
+    },
+    {
+      "score": 10,
+      "label": "Too Large / Should Be Split",
+      "description": "Excessive effort for a single work item. Cannot be reliably estimated or delivered as-sized.",
+      "examples": [
+        "Multi-quarter initiative with unclear scope",
+        "Broad transformation effort",
+        "Work requiring significant decomposition before planning"
+      ]
+    }
+  ],
+  "governanceGuidance": [
+    "Strongly encourage splitting any item scored 8 or higher",
+    "Reject items scored 10 until decomposed",
+    "Calibrate Job Size regularly across teams and value streams",
+    "Treat Job Size as a divisor in WSJF, not a prioritization lever"
+  ]
+}
